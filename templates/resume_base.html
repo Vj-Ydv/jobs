@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block resume %}
+
+
+<div class="sidenav">
+    <div class="sidebar-header">
+            <h3>My Resume</h3>
+            <a href=""><img class="rounded-circle" style=" margin-left: 20px"width ="70" height="70" src="{{ user.profile.image.url }}"></a>
+    </div> 
+        <a href="/employee/resume" class="{{ resume_active }}"><i class="fa fa-address-book" style="font-size:18px;color:#2F4F4F"></i>Basic Info</a>
+        <a href="/employee/training" class="{{ training_active }}"><i class='fa fa-graduation-cap' style='font-size:18px;color:#2F4F4F'></i>Education</a>
+        <a href="/employee/project"class="{{ project_active }}" ><i class="fa fa-group" style="font-size:18px;color:#2F4F4F"></i>Project</a>
+        <a href="/employee/projectitem" class="{{ projectitem_active }}"><i class="fa fa-list" style="font-size:18px;color:#2F4F4F"></i>Project Item</a>
+        <a href="/employee/skill" class="{{ skill_active }}"><i class="fa fa-code" style="font-size:18px;color:#2F4F4F"></i>Skill</a>
+        <a href="/employee/skillitem" class="{{ skillitem_active }}"><i class="fa fa-list" style="font-size:18px;color:#2F4F4F"></i>Skill Item</a>   
+        <a href="/employee/experience" class="{{ experience_active }}"><i class="fa fa-handshake-o" style="font-size:18px;color:#2F4F4F"></i>Experience</a>
+        <a href="/employee/certification" class="{{ certification_active }}"><i class="fa fa-file-code-o" style="font-size:18px;color:#2F4F4F"></i>Certification</a>
+        <a href="/employee/certificationitem" class="{{ certificationitem_active }}"><i class="fa fa-list" style="font-size:18px;color:#2F4F4F"></i>Certification Item</a>
+        <a href="/employee/language" class="{{ language_active }}"><i class="fa fa-sign-language" style="font-size:18px;color:#2F4F4F"></i>Language</a>
+        <a href="/employee/languageitem" class="{{ languageitem_active }}"><i class="fa fa-list" style="font-size:18px;color:#2F4F4F"></i>Language Item</a>
+</div>
+
+
+{% endblock %}
+{% block footer %}
+{% endblock %}
+

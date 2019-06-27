@@ -1,0 +1,22 @@
+
+{% extends 'base.html' %}
+{% block resume %}
+
+
+<div class="sidenav">
+    <div class="sidebar-header">
+            <h3>My Resume</h3>
+            <a href=""><img class="rounded-circle" style=" margin-left: 20px"width ="70" height="70" src="{{ user.profile.image.url }}"></a>
+    </div> 
+        <a href="{% url 'curriculum:updateResume' %}" class="{{ resume_active }}"><i class="fa fa-address-book" style="font-size:18px;color:#2F4F4F"></i>Basic Info</a>
+        <a href="{% url 'curriculum:updatetraining' %}" class="{{ training_active }}"><i class='fa fa-graduation-cap' style='font-size:18px;color:#2F4F4F'></i>Education</a>
+        <a href="{% url 'curriculum:updateprojectitem' %}" class="{{ projectitem_active }}"><i class="fa fa-list" style="font-size:18px;color:#2F4F4F"></i>Project Item</a>
+        <a href="{% url 'curriculum:updateskillitem' %}" class="{{ skillitem_active }}"><i class="fa fa-list" style="font-size:18px;color:#2F4F4F"></i>Skill Item</a>   
+        <a href="{% url 'curriculum:updateexperience' %}" class="{{ experience_active }}"><i class="fa fa-handshake-o" style="font-size:18px;color:#2F4F4F"></i>Experience</a>
+        <a href="{% url 'curriculum:updatecertificationitem' %}" class="{{ certificationitem_active }}"><i class="fa fa-list" style="font-size:18px;color:#2F4F4F"></i>Certification Item</a>
+        <a href="{% url 'curriculum:updatelanguageitem' %}" class="{{ languageitem_active }}"><i class="fa fa-list" style="font-size:18px;color:#2F4F4F"></i>Language Item</a>
+</div>
+{% endblock %}
+{% block footer %}
+{% endblock %}
+

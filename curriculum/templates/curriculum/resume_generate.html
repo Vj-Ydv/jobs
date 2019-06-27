@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block content%}
+<div class="zoom">
+	<div class="row">
+		<div class="col-md-3 mb-0" id="colm"> 
+			<a href="{% url 'curriculum:classic1' %}"><img class="image1" src="{% static 'img/classic1.jpg' %}"></a>
+		</div>
+
+		<div class="col-md-3 mb-0"> 
+  			<a href="{% url 'curriculum:modern' %}"> <img class="image1" src="{% static 'img/modern.jpg' %}"></a>
+		</div>
+
+		<div class="col-md-3 mb-0"> 
+   			<a href="{% url 'curriculum:classic' %}"> <img class="image1" src="{% static 'img/classic.jpg' %}"></a>
+		</div>
+
+		<div class="col-md-3 mb-0"> 
+   			<a href="{% url 'curriculum:test' %}"> <img class="image1" src="{% static 'img/test.jpg' %}"></a>
+		</div>
+	</div>
+</div>
+	<div style="text-align: right; font-size: 40px">
+            <a href="{% url 'curriculum:viewCV' %}" class="badge badge-pill badge-primary">View Resume</a>
+        </div>
+
+	 <div class="sidebar-header">
+            
+    </div> 
+{% endblock %}
