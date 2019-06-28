@@ -148,7 +148,7 @@ USE_TZ = True
 PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
 
 STATIC_ROOT = os.path.join(PROJECT_ROOT, 'staticfiles')
-ALLOWED_HOSTS = ['http://pulchowkjobsportal.herokuapp.com/']
+ALLOWED_HOSTS = ['pulchowkjobsportal.herokuapp.com']
 
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [
