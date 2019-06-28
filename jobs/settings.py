@@ -100,11 +100,12 @@ WSGI_APPLICATION = 'jobs.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'jobs',
-        'USER': 'root',
-        'PASSWORD': '',
-        'HOST': 'localhost',
-        'PORT': '',
+        'NAME': 'dbvjdip9id0cl3',
+        'USER': 'zxfqmliijtvqzt',
+        'PASSWORD': '6c60ce39d2e05f0e7e3a1c8ae8a44a7f43f1b40441aaee1dde6497acc379fdfe
+',
+        'HOST': 'ec2-174-129-226-234.compute-1.amazonaws.com',
+        'PORT': '5432',
         
     }
 }
